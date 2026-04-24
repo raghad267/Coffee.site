@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>عالم القهوة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>☕ عالم القهوة</h1>
+    <p>رحلة ممتعة في عالم القهوة وأنواعها</p>
+</header>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#about">عن المشروع</a>
+    <a href="#beans">محصول القهوة</a>
+    <a href="#tools">أدوات القهوة</a>
+</nav>
+
+<section id="about" class="content">
+    <h2>عن المشروع</h2>
+    <p>
+        يهدف هذا الموقع إلى التعريف بعالم القهوة وأهميتها في حياتنا اليومية، 
+        حيث تعد القهوة من أكثر المشروبات انتشارًا حول العالم. 
+        تم تصميم هذا الموقع باستخدام تقنيات HTML و CSS، مع الاستفادة من 
+        الذكاء الاصطناعي في كتابة النصوص وتنظيم الأفكار، وذلك لتقديم محتوى 
+        بسيط وجذاب يتناسب مع جميع المستخدمين.
+    </p>
+</section>
+
+<section id="beans" class="content">
+    <h2>محصول القهوة</h2>
+    <p>
+        يتم زراعة القهوة في مناطق متعددة حول العالم، خاصة في المناطق الاستوائية. 
+        وتختلف نكهة القهوة حسب نوع الحبوب وطريقة زراعتها ومعالجتها، 
+        مثل القهوة العربية والإثيوبية والبرازيلية.
+    </p>
+   <img src="محصول القهوة.jfif" alt="محصول القهوة">
+</section>
+
+<section id="tools" class="content">
+    <h2>أدوات القهوة</h2>
+    <p>
+        توجد العديد من الأدوات المستخدمة في تحضير القهوة، مثل الدلة، 
+        ماكينة القهوة، مطحنة البن، وأدوات التقطير. 
+        تساعد هذه الأدوات في إبراز نكهة القهوة بطريقة مميزة.
+    </p>
+    <img src="أدوات القهوة.jfif" alt="أدوات القهوة">
+    <img src="أدوات القهوة2.jfif" alt="أدوات القهوة">
+</section>
+<section class="content ai-section">
+    <h2>اسأل مساعد القهوة الذكي</h2>
+    <div class="ai-box">
+        <input type="text" placeholder="كيف أقدر أساعدك في تحضير قهوتك؟" id="user-input">
+        <button onclick="askAI()">إرسال</button>
+    </div>
+    <div id="ai-response" class="response-area">
+        </div>
+
+<section class="video-container">
+    <div class="video-item">
+        <video controls autoplay muted loop>
+            <source src="v1.mp4" type="video/mp4">
+        </video>
+        <h2>فيديو تقطير القهوة</h2>
+    </div>
+
+    <div class="video-item">
+        <video controls autoplay muted loop>
+            <source src="v2.mp4" type="video/mp4">
+        </video>
+        <h2>فيديو تحضير القهوة</h2>
+    </div>
+</section>
+
+
+</section>
+<footer>
+    <p>إعداد المتدربات : رغد محمد,سحاب الغامدي,فاطمةعوض,يسرى سعيد</p>
+
+        
+    <p>اسم  المدربة المشرفة : خلود الثبيتي</p>
+</footer>
+<script>
+function askAI() {
+    const input = document.getElementById('user-input').value;
+    const responseArea = document.getElementById('ai-response');
+    
+    if(input.includes("ادوات القهوة")) {
+        responseArea.innerText = "الدلة، ماكينة القهوة، مطحنة البن، وأدوات التقطير";
+    } 
+     if(input.includes("انواع البن")) {
+        responseArea.innerText = " القهوة العربية والإثيوبية والبرازيلية" ;
+    }
+}
+</script>
+
+
+</section>
+</body>
+</html>
